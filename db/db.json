@@ -1,1 +1,12 @@
-[]
+[
+    {
+        "title": "EXPRESS JS",
+        "text": "Express.js is a web application framework for Node.js, which provides a robust set of features for web and mobile applications.",
+        "id": "a9372fc7-0a85-4617-9c5b-1e3a5ad22f69"
+    },
+    {
+        "title": "API ROUTES ",
+        "text": "Use descriptive and clear route names: Use clear and descriptive names for your routes to make it easy for other developers to understand the purpose of each route.",
+        "id": "3328fa2f-2120-47b0-bf9e-525d5b535f8a"
+    }
+]

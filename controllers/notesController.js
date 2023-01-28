@@ -3,6 +3,7 @@ const router = express.Router();
 const fs = require("fs")
 const uuid = require("uuid");
 
+// get route to get all notes
 router.get("/", (req, res) => {
     fs.readFile("./db/db.json", "utf-8", (err, data) => {
       if (err) {
@@ -16,6 +17,7 @@ router.get("/", (req, res) => {
   }
 );
 
+// post route to add new notes
 router.post("/", (req, res) => {
     fs.readFile("./db/db.json", "utf-8", (err, data) => {
         if (err) {
@@ -38,6 +40,7 @@ router.post("/", (req, res) => {
     });
 });
 
+// get route to get notes by id
 router.get("/:id", (req, res) => {
     fs.readFile("./db/db.json", "utf-8", (err, data) => {
         if (err) {
@@ -56,6 +59,7 @@ router.get("/:id", (req, res) => {
     });
 });
 
+// delete route to delete notes by id
 router.delete ("/:id", (req, res) => {
     fs.readFile("./db/db.json", "utf-8", (err, data) => {
         if (err) {
